@@ -1,12 +1,14 @@
-/**
+/**=
  * Obat06
  */
 public class Obat06 {
+    //atribut
     public String nama06;
     public String kategori06;
     public int stok06;
     public int jumlah06;
 
+    //konstruktor berparameter
     public Obat06(String nama06, String kategori06, int stok06, int jumlah06) {
         this.nama06 = nama06;
         this.kategori06=kategori06;
@@ -36,7 +38,7 @@ public class Obat06 {
     public int getStok() {
         return stok06;
     }
-    public int getJumlah() {
+    public int getJumlah() { 
         return jumlah06;
     }
 
@@ -47,8 +49,8 @@ public class Obat06 {
 
     // Method untuk mencari obat yang paling banyak tidak terjual
     public static Obat06 cariObatTerjual(Obat06[] daftarObat06) {
-        Obat06 obatTerjual06 = daftarObat06[0];
-        for (Obat06 obat06 : daftarObat06) {
+        Obat06 obatTerjual06 = daftarObat06[0]; 
+        for (Obat06 obat06 : daftarObat06) { 
             if (obat06.hitungSisa() > obatTerjual06.hitungSisa()) {
                 obatTerjual06 = obat06;
             }

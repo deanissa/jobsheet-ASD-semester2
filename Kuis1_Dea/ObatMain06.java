@@ -7,7 +7,8 @@ public class ObatMain06 {
         int jumlahObat06 = sc.nextInt();
         sc.nextLine(); 
 
-        Obat06[] daftarObat06 = new Obat06[jumlahObat06];
+        //Deklarasi dan inisialisasi array dari objek Obat06. 
+        Obat06[] daftarObat06 = new Obat06[jumlahObat06]; //Nama variabel digunakan menyimpan array yang akan dibuat
         //Input informasi Data Obat
         for (int i = 0; i < jumlahObat06; i++) {
             System.out.println("Masukkan informasi untuk Obat ke-" + (i + 1));
@@ -35,7 +36,7 @@ public class ObatMain06 {
             System.out.println("Jumlah Obat: " + obat06.getJumlah());
             System.out.println();
         }
-         // Mencari obat yang paling banyak tidak terjual
+        // Mencari obat yang paling banyak tidak terjual
         Obat06 obatTerjual06 = Obat06.cariObatTerjual(daftarObat06);
         System.out.println("---------------------------------");
         System.out.println("Obat Paling Banyak Tidak Terjual:");
